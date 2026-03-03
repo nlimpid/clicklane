@@ -1,0 +1,24 @@
+[package]
+name = "clicklane"
+description = "A lightweight ClickUp desktop client for focused daily execution."
+authors.workspace = true
+edition.workspace = true
+homepage.workspace = true
+license.workspace = true
+publish = false
+repository.workspace = true
+rust-version.workspace = true
+version.workspace = true
+
+[lib]
+name = "clicklane_lib"
+crate-type = ["staticlib", "cdylib", "rlib"]
+
+[build-dependencies]
+tauri-build.workspace = true
+
+[dependencies]
+clickup = { path = "../crates/clickup" }
+serde.workspace = true
+serde_json.workspace = true
+tauri.workspace = true

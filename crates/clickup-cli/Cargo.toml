@@ -1,0 +1,22 @@
+[package]
+name = "clickup-cli"
+authors.workspace = true
+description = "Command-line tools for ClickUp task tracking and release management."
+documentation = "https://docs.rs/clickup-cli"
+edition.workspace = true
+homepage.workspace = true
+keywords = ["clickup", "cli", "productivity"]
+license.workspace = true
+readme = "../../README.md"
+repository.workspace = true
+rust-version.workspace = true
+version.workspace = true
+categories = ["command-line-utilities"]
+
+[dependencies]
+clap.workspace = true
+clickup = { path = "../clickup", version = "0.1.0" }
+reqwest.workspace = true
+serde.workspace = true
+serde_json.workspace = true
+tokio.workspace = true

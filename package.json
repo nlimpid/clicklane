@@ -1,0 +1,58 @@
+{
+  "name": "clicklane",
+  "private": true,
+  "version": "0.1.0",
+  "homepage": "https://github.com/nlimpid/clicklane",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nlimpid/clicklane.git"
+  },
+  "bugs": {
+    "url": "https://github.com/nlimpid/clicklane/issues"
+  },
+  "type": "module",
+  "scripts": {
+    "dev": "vite --host --port 1420",
+    "build": "tsc -b && vite build",
+    "preview": "vite preview --host --port 1420",
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "lint": "oxlint --deny-warnings .",
+    "lint:type": "oxlint --type-aware --tsconfig ./tsconfig.app.json ./src",
+    "lint:tsgo": "oxlint-tsgolint",
+    "format": "oxfmt --write .",
+    "format:check": "oxfmt --check .",
+    "tauri": "tauri",
+    "tauri:dev": "tauri dev",
+    "tauri:build": "tauri build"
+  },
+  "dependencies": {
+    "@ai-sdk/openai": "latest",
+    "@base-ui/react": "latest",
+    "@tauri-apps/api": "^2.0.0",
+    "ai": "latest",
+    "clsx": "^2.1.1",
+    "react": "^19.0.0",
+    "react-dom": "^19.0.0",
+    "tailwind-merge": "^3.3.1",
+    "zod": "^3.24.1",
+    "zustand": "^5.0.3"
+  },
+  "devDependencies": {
+    "@tailwindcss/vite": "^4.0.0",
+    "@tauri-apps/cli": "^2.0.0",
+    "@testing-library/jest-dom": "^6.6.3",
+    "@testing-library/react": "^16.2.0",
+    "@types/react": "^19.0.8",
+    "@types/react-dom": "^19.0.3",
+    "@vitejs/plugin-react-swc": "^3.8.0",
+    "jsdom": "^26.0.0",
+    "oxfmt": "latest",
+    "oxlint": "latest",
+    "oxlint-tsgolint": "latest",
+    "tailwindcss": "^4.0.0",
+    "typescript": "~5.7.2",
+    "vite": "^6.2.0",
+    "vitest": "^3.0.5"
+  }
+}

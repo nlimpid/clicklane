@@ -1,0 +1,16 @@
+node_modules
+dist
+coverage
+.DS_Store
+*.log
+*.tsbuildinfo
+.idea
+.vscode
+target
+src-tauri/target
+src-tauri/gen
+src-tauri/icons/icon.iconset
+.env
+.env.local
+vite.config.js
+vite.config.d.ts

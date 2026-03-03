@@ -1,0 +1,21 @@
+[package]
+name = "clickup"
+authors.workspace = true
+description = "Rust API client for ClickUp with auth helpers and task workflows."
+documentation = "https://docs.rs/clickup"
+edition.workspace = true
+homepage.workspace = true
+keywords = ["clickup", "api", "sdk", "tasks"]
+license.workspace = true
+readme = "../../README.md"
+repository.workspace = true
+rust-version.workspace = true
+version.workspace = true
+categories = ["api-bindings"]
+
+[dependencies]
+reqwest.workspace = true
+serde.workspace = true
+serde_json.workspace = true
+thiserror.workspace = true
+url.workspace = true

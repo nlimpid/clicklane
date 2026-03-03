@@ -1,0 +1,27 @@
+[workspace]
+members = [
+  "crates/clickup",
+  "crates/clickup-cli",
+  "src-tauri",
+]
+resolver = "2"
+
+[workspace.package]
+authors = ["Nlimpid"]
+edition = "2021"
+homepage = "https://github.com/nlimpid/clicklane"
+license = "MIT"
+repository = "https://github.com/nlimpid/clicklane"
+rust-version = "1.77"
+version = "0.1.0"
+
+[workspace.dependencies]
+clap = { version = "4.5.32", features = ["derive"] }
+reqwest = { version = "0.12.14", default-features = false, features = ["charset", "http2", "json", "macos-system-configuration", "rustls-tls"] }
+serde = { version = "1", features = ["derive"] }
+serde_json = "1"
+tauri = { version = "2", features = [] }
+tauri-build = { version = "2", features = [] }
+thiserror = "2.0.12"
+tokio = { version = "1.44.1", features = ["macros", "rt-multi-thread"] }
+url = "2.5.4"
