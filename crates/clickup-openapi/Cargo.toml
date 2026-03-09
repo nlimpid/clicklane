@@ -1,13 +1,13 @@
 [package]
-name = "clickup"
+name = "clickup-openapi"
 authors.workspace = true
 description = "Rust API client for ClickUp with auth helpers and task workflows."
-documentation = "https://docs.rs/clickup"
+documentation = "https://docs.rs/clickup-openapi"
 edition.workspace = true
 homepage.workspace = true
 keywords = ["clickup", "api", "sdk", "tasks"]
 license.workspace = true
-readme = "../../README.md"
+readme = "README.md"
 repository.workspace = true
 rust-version.workspace = true
 version.workspace = true
@@ -19,3 +19,10 @@ serde.workspace = true
 serde_json.workspace = true
 thiserror.workspace = true
 url.workspace = true
+
+[dev-dependencies]
+tokio.workspace = true
+
+[package.metadata.docs.rs]
+all-features = true
+rustdoc-args = ["--cfg", "docsrs"]

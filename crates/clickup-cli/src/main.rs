@@ -5,7 +5,7 @@ use std::{
 };
 
 use clap::{Args, Parser, Subcommand, ValueEnum};
-use clickup::{ClickUpClient, TaskReference, TrackTaskOptions, TrackedTask};
+use clickup_openapi::{ClickUpClient, TaskReference, TrackTaskOptions, TrackedTask};
 use reqwest::header::{HeaderMap, HeaderValue, ACCEPT, USER_AGENT};
 use serde::Deserialize;
 
@@ -400,7 +400,7 @@ fn set_executable_permissions(_: &Path) -> io::Result<()> {
 
 #[cfg(test)]
 mod tests {
-    use clickup::TaskReference;
+    use clickup_openapi::TaskReference;
 
     use super::{release_asset_name_for, resolve_task_reference};
 

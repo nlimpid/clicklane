@@ -1,4 +1,4 @@
-use clickup::{ClickUpAuth, ClickUpClient, ClickUpConfig, Task, TaskReference, TrackTaskOptions};
+use clickup_openapi::{ClickUpAuth, ClickUpClient, ClickUpConfig, Task, TaskReference, TrackTaskOptions};
 use serde::Serialize;
 use serde_json::Value;
 

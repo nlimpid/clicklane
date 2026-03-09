@@ -1,6 +1,6 @@
 [workspace]
 members = [
-  "crates/clickup",
+  "crates/clickup-openapi",
   "crates/clickup-cli",
   "src-tauri",
 ]

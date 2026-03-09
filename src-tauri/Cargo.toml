@@ -18,7 +18,7 @@ crate-type = ["staticlib", "cdylib", "rlib"]
 tauri-build.workspace = true
 
 [dependencies]
-clickup = { path = "../crates/clickup" }
+clickup-openapi = { path = "../crates/clickup-openapi" }
 serde.workspace = true
 serde_json.workspace = true
 tauri.workspace = true
